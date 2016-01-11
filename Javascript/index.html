@@ -3,15 +3,40 @@
     <head>
         <title>Javascript</title>
         <script type="text/javascript" src="practice.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js">        
+        </script>     
+    </head>
+   <style type="text/css">
+   	.red-text {
+	   	color: red;
+	   	font-size: 50px;
+	   	transition: 5s;
+	   	margin: 0;padding: 0;
+   	}
+   </style>
+    <body>
+        <h1 id="main-heading" class="someclass">Hello</h1>
+        
+        <p class="lulu">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived
+         not only five centuries, but also the leap into electronic typesetting, remaining essentially
+          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+           including versions of Lorem Ipsum.
+			</p>
+			
+			<p class="lulu">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived
+         not only five centuries, but also the leap into electronic typesetting, remaining essentially
+          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+           including versions of Lorem Ipsum.
+			</p>
         
         <script>
-        for(var i = 1; i < 10; i = i + 1 ) {
-        	console.log("Hello Luis");
-        	console.log("Number:" + i);
-        }
+       	$('.lulu').first().css('border','1px solid red');
         </script>
-    </head>
-    <body>
-        <h1>Hello</h1>
     </body>
 </html>
